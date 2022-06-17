@@ -5,3 +5,11 @@ body {
   padding-top: 56px;
   overflow-x: hidden;
 }
+
+.btn {
+  border-radius: 20px;
+}
+
+.form-control {
+  border-radius: 20px;
+}

@@ -1,12 +1,31 @@
-<div class="container">
+<section class="bg-dark">
 
-  <form class="contact-form" (submit)="sendEmail($event)">
-    <label>Name</label>
-    <input type="text" name="user_name">
-    <label>Email</label>
-    <input type="email" name="user_email">
-    <label>Message</label>
-    <textarea name="message"></textarea>
-    <input type="submit" value="Send">
-  </form>
-</div>
+  <div class="container contact-container">
+    <div class="contact-text text-white">
+      <h1 class="mb-5">Lets Chat</h1>
+      <h5 class="mb-2">Feel free to ask me anything!</h5>
+      <p>Not a fan of forms? Send me an <a href="mailto: breckiam@gmail.com?subject=I love your website" class="email-link">email</a>.</p>
+    </div>
+
+    <div class="contact-form">
+      <form class="contact-form" (submit)="sendEmail($event)">
+        <div class="form-floating mb-3">
+          <input type="text" id="floatingInput" name="user_name" class="form-control" placeholder="Your name" required>
+          <label for="floatingInput">Name</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input type="email" id="floatingEmail" name="user_email" class="form-control" placeholder="john@email.com">
+          <label for="floatingEmail">Email</label>
+        </div>
+        <div class="form-floating mb-2">
+          <textarea id="floatingTextarea2" name="message" class="form-control"
+          placeholder="Leave a comment here" style="height: 100px;"></textarea>
+          <label for="floatingTextarea2">Message</label>
+        </div>
+        <input type="submit" value="Send" class="btn btn-primary mb-5" style="width: 120px;">
+      </form>
+    </div>
+
+    </div>
+
+</section>

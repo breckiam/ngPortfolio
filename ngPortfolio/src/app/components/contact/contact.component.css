@@ -1,0 +1,31 @@
+.contact-container {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+  grid-template-areas:
+      "t f";
+  grid-gap: 15px;
+}
+
+.contact-text {
+  background-image: url(https://img.icons8.com/ios/250/333333/share-2--v1.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  grid-area: t;
+}
+
+.contact-form {
+  grid-area: f;
+}
+
+.email-link {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 800px) {
+  .contact-container {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "t"
+        "f";
+  }
+}
