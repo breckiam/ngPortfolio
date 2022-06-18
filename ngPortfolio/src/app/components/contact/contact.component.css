@@ -14,11 +14,20 @@
 }
 
 .contact-form {
+  position: relative;
+  z-index: 1;
   grid-area: f;
 }
 
 .email-link {
   text-decoration: none;
+}
+
+.success-toast {
+  position: relative;
+  top: -300px;
+  left: 20%;
+  z-index: 100 !important;
 }
 
 @media screen and (max-width: 800px) {

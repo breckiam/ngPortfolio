@@ -8,9 +8,10 @@
     </div>
 
     <div class="contact-form">
-      <form class="contact-form" (submit)="sendEmail($event)">
+
+      <form #myForm class="contact-form" (submit)="sendEmail($event); myForm.reset()" #contact>
         <div class="form-floating mb-3">
-          <input type="text" id="floatingInput" name="user_name" class="form-control" placeholder="Your name" required>
+          <input type="text" id="floatingInput" name="user_name" class="form-control" placeholder="Your name"  required>
           <label for="floatingInput">Name</label>
         </div>
         <div class="form-floating mb-3">
@@ -24,7 +25,14 @@
         </div>
         <input type="submit" value="Send" class="btn btn-primary mb-5" style="width: 120px;">
       </form>
+
+      <ngb-toast *ngIf="show"  header="Thank you" (hidden)="close()" class="success-toast bg-success text-white">
+        If you close me, I will automatically re-appear after a few seconds.
+      </ngb-toast>
+      <p *ngIf="!show">I'll be back!</p>
     </div>
+
+
 
     </div>
 
