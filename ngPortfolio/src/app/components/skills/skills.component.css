@@ -16,3 +16,9 @@
     font-size: 1em;
   }
 }
+
+@media screen and (min-width: 1000px) {
+  .skills-container {
+    font-size: 225px;
+  }
+}
