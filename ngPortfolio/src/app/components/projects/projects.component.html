@@ -1,11 +1,11 @@
-<div class="bg-light" id="projects">
+<div class="bg-dark" id="projects">
 
   <div class="container px-4 py-5" id="custom-cards">
-    <h2 class="pb-2 border-bottom">Projects</h2>
+    <h2 class="pb-2 border-bottom text-white">Projects</h2>
 
     <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
       <div class="col" *ngFor="let project of projects">
-        <div class="card card-cover h-100 overflow-hidden text-white bg-dark shadow-lg" style="background-image: url('unsplash-photo-1.jpg');">
+        <div class="card card-cover h-100 overflow-hidden text-white bg-secondary shadow-lg" [style.background]="'url(' + project.imgURL + ')'">
           <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
             <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">{{project.name}}</h2>
             <ul class="d-flex list-unstyled mt-auto">
