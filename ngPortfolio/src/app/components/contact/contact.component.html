@@ -1,13 +1,13 @@
 <section class="bg-dark" id="contact">
 
-  <div class="container contact-container">
+  <div class="container contact-container" data-aos="fade-left" data-aos-duration="1500">
     <div class="contact-text text-white">
       <h1 class="mb-5">Lets Chat</h1>
       <h5 class="mb-2">Feel free to ask me anything!</h5>
       <p>Not a fan of forms? Send me an <a href="mailto: breckiam@gmail.com?subject=I love your website" class="email-link">email</a>.</p>
     </div>
 
-    <div class="contact-form">
+    <div class="contact-form" data-aos="zoom-out-right" data-aos-duration="1500">
 
       <form #myForm class="contact-form" (submit)="sendEmail($event); myForm.reset()" #contact>
         <div class="form-floating mb-3">

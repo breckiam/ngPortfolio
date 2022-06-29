@@ -4,7 +4,7 @@
     <h2 class="pb-2 border-bottom text-white">Projects</h2>
 
     <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
-      <div class="col" @fade *ngFor="let project of projects">
+      <div class="col" data-aos="flip-up" data-aos-duration="2000"  *ngFor="let project of projects">
         <div class="card card-cover h-100 overflow-hidden text-white bg-secondary shadow-lg" [style.background]="'linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(' + project.imgURL + ')'">
           <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
             <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">{{project.name}}</h2>

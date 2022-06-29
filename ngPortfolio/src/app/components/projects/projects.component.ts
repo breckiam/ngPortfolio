@@ -6,14 +6,7 @@ import { trigger, transition, style, animate, stagger } from '@angular/animation
   selector: 'app-projects',
   templateUrl: './projects.component.html',
   styleUrls: ['./projects.component.css'],
-  animations: [
-    trigger('fade', [
-      transition('void => *', [
-        style({opacity: 0, transform: 'translateY(50px)'}),
-        animate(2000)
-      ])
-    ])
-  ]
+
 })
 export class ProjectsComponent implements OnInit {
 
