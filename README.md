@@ -1,27 +1,16 @@
-# NgPortfolio
+#ngPortfolio
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.5.
+You can view the deployed project <a href="https://breckiam.dev/">here</a>
 
-## Development server
+### Description
+This is an angular project that I put together to showcase some of the projects I have done and some information about myself. All my socials are linked to the website along with contact form to be able to contact me via email.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+### Technologies Used
+- Angular v13+
+- BootStrap v5+
+- AOS
 
-## Code scaffolding
+### What I learned
+This was a great learning experience for deepening my knowledge with Angular and being able to learn how to implement animations. I originally was doing some animations with Angular's BrowerAnimationModel, but ended up changing some things around and used AOS instead. AOS was pretty simple to implement into the project and gives the webpage a smoother look and feel.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+I also was trying to optimize this projects performance. It's amazing how much of a difference photos make in page speeds. I was originally using .png files and transferred all my images to .webp format. I also learned how to optimize SEO with meta tags and alt attributes for images, its wonderful as this helps with SEO and Accessibility
