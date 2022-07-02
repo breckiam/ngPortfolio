@@ -1,6 +1,5 @@
 import { Project } from './../../models/project';
 import { Component, OnInit } from '@angular/core';
-import { trigger, transition, style, animate, stagger } from '@angular/animations';
 
 @Component({
   selector: 'app-projects',
