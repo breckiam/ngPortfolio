@@ -17,4 +17,5 @@ export class NavigationComponent implements OnInit {
   hamburgerToggle() {
     this.classActive = !this.classActive;
   }
+
 }
