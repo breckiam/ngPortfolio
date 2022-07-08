@@ -2,7 +2,7 @@
 @import "~aos/dist/aos.css";
 @import "~bootstrap/dist/css/bootstrap.css";
 
-body {
+html, body {
   width: 100vw;
   padding-top: 56px;
   overflow-x: hidden;
