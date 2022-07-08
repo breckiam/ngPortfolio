@@ -3,6 +3,7 @@
 @import "~bootstrap/dist/css/bootstrap.css";
 
 body {
+  width: 100vw;
   padding-top: 56px;
   overflow-x: hidden;
 }
